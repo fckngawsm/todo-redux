@@ -1,4 +1,4 @@
-import { ADD_TODO } from "./todos-constants";
+import { ADD_TODO, REMOVE_TODO } from "./todos-constants";
 
 export const todosReducer = (state = [], { type, payload }) => {
   switch (type) {
@@ -11,6 +11,9 @@ export const todosReducer = (state = [], { type, payload }) => {
           completed: false,
         },
       ];
+    }
+    case REMOVE_TODO: {
+      return state.filter((todo) => todo.id !== payload);
     }
     default: {
       return state;

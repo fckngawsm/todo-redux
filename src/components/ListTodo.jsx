@@ -9,8 +9,8 @@ function ListTodo() {
   return (
     <Container>
       <List sx={{ display: "flex", flexDirection: "column" }}>
-        {todos.map((todo , index) => {
-          return <TodoItem text={todo.title} key={index}/>;
+        {todos.map((todo, index) => {
+          return <TodoItem id={todo.id} text={todo.title} key={index} />;
         })}
       </List>
     </Container>

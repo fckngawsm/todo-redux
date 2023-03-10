@@ -9,7 +9,7 @@ function Header() {
       position="static"
       sx={{ background: "black", alignItems: "center" }}
     >
-      <Container sx={{mt:4}} style={{ padding: "0"}}>
+      <Container sx={{ mt: 4 }} style={{ padding: "0" }}>
         <Toolbar sx={{ justifyContent: "space-between" }}>
           <Stack>
             <Typography
@@ -32,7 +32,11 @@ function Header() {
             </Typography>
           </Stack>
           <Stack direction="row" spacing={2}>
-            <Input inputProps={{ style: { color: "white" } }} color="primary" placeholder="Find task" />
+            <Input
+              inputProps={{ style: { color: "white" } }}
+              color="primary"
+              placeholder="Find task"
+            />
             <IconButton style={{ color: "white" }}>
               <SearchIcon />
             </IconButton>

@@ -5,7 +5,6 @@ import { addTodo } from "../store/todos/todos-action";
 
 function AddTask() {
   const [value, setValue] = useState("");
-  console.log(value)
   const dispatch = useDispatch();
   const handleAddTodo = (text) => {
     dispatch(addTodo(text));

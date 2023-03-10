@@ -3,8 +3,11 @@ import { Stack } from "@mui/system";
 import DeleteIcon from "@mui/icons-material/Delete";
 import TaskIcon from "@mui/icons-material/Task";
 import React from "react";
+import { useDispatch } from "react-redux";
+import { removeTodo } from "../store/todos/todos-action";
 
-function TodoItem({ text }) {
+function TodoItem({ text, id }) {
+  const dispatch = useDispatch();
   return (
     <ListItem
       sx={{
@@ -27,6 +30,7 @@ function TodoItem({ text }) {
               bgcolor: "black",
             },
           }}
+          onClick={() => dispatch(removeTodo(id))}
         >
           <DeleteIcon />
         </Button>

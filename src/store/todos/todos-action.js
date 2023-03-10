@@ -5,7 +5,7 @@ export const addTodo = (text) => ({
   payload: text,
 });
 
-export const removeTodo = (todo) => ({
+export const removeTodo = (id) => ({
   type: REMOVE_TODO,
-  payload: todo,
+  payload: id,
 });
