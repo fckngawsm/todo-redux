@@ -1,13 +1,13 @@
 import React, { useState } from "react";
-import { Button, Container, FormControl, Input } from "@mui/material";
 import { useDispatch } from "react-redux";
+import { Button, Container, FormControl, Input } from "@mui/material";
 import { addTodo } from "../store/todos/todos-action";
 
 function AddTask() {
   const [value, setValue] = useState("");
   const dispatch = useDispatch();
   const handleAddTodo = (text) => {
-    if(text.length < 1) return
+    if (text.length < 1) return;
     dispatch(addTodo(text));
     setValue("");
   };

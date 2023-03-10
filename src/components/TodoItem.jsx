@@ -1,9 +1,9 @@
+import React from "react";
+import { useDispatch } from "react-redux";
 import { Button, ListItem, Typography } from "@mui/material";
 import { Stack } from "@mui/system";
 import DeleteIcon from "@mui/icons-material/Delete";
 import TaskIcon from "@mui/icons-material/Task";
-import React from "react";
-import { useDispatch } from "react-redux";
 import { removeTodo } from "../store/todos/todos-action";
 
 function TodoItem({ text, id }) {

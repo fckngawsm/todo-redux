@@ -1,14 +1,17 @@
 import React from "react";
 import AddTask from "./AddTask";
 import Header from "./Header";
-import "../fonts/inter.css";
 import ListTodo from "./ListTodo";
+import "../fonts/inter.css";
+import Footer from "./Footer";
+
 function App() {
   return (
     <div className="App">
       <Header />
       <AddTask />
       <ListTodo />
+      <Footer />
     </div>
   );
 }
