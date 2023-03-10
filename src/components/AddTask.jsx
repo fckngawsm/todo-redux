@@ -7,6 +7,7 @@ function AddTask() {
   const [value, setValue] = useState("");
   const dispatch = useDispatch();
   const handleAddTodo = (text) => {
+    if(text.length < 1) return
     dispatch(addTodo(text));
     setValue("");
   };
