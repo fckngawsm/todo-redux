@@ -4,7 +4,7 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import TaskIcon from "@mui/icons-material/Task";
 import React from "react";
 
-function TodoItem() {
+function TodoItem({ text }) {
   return (
     <ListItem
       sx={{
@@ -16,7 +16,7 @@ function TodoItem() {
         justifyContent: "space-between",
       }}
     >
-      <Typography fontSize="20px">Пойти погулять</Typography>
+      <Typography fontSize="20px">{text}</Typography>
       <Stack sx={{ display: "flex", flexDirection: "row" }}>
         <Button
           sx={{
