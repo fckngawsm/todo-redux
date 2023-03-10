@@ -6,9 +6,9 @@ import CopyrightIcon from "@mui/icons-material/Copyright";
 function Footer() {
   return (
     <Container sx={{ display: "flex" , borderTop:'1px solid white' , paddingTop:'20px'}}>
-      <Typography  mr="10px" >{new Date().getFullYear()}</Typography>
+      <Typography variant="p" component='h4' mr="10px" >{new Date().getFullYear()}</Typography>
       <CopyrightIcon/>
-      <Typography>Кирилл</Typography>
+      <Typography variant="p" component='h4'>Кирилл</Typography>
     </Container>
   );
 }

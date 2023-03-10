@@ -1,22 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { ThemeProvider, createTheme } from "@mui/material/styles";
+import { ThemeProvider } from "@mui/material/styles";
 import { Provider } from "react-redux";
 import "./index.css";
 import App from "./components/App";
+import {theme} from './utils/theme'
 import { persistor, store } from "./store";
 import { PersistGate } from "redux-persist/integration/react";
 
-const theme = createTheme({
-  palette: {
-    primary: {
-      main: "#fefefe",
-    },
-  },
-  typography: {
-    fontFamily: `'Inter',Arial, Helvetica, sans-serif`,
-  },
-});
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
