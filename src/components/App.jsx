@@ -1,9 +1,12 @@
-import Header from './Header';
-
+import React from "react";
+import AddTask from "./AddTask";
+import Header from "./Header";
+import '../fonts/inter.css'
 function App() {
   return (
     <div className="App">
-        <Header/>
+      <Header />
+      <AddTask />
     </div>
   );
 }
