@@ -19,7 +19,7 @@ function Header() {
               component="h1"
               color="primary"
             >
-              ToDo
+              Todo
             </Typography>
             <Typography
               sx={{ flexGrow: 1 }}
