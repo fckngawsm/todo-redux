@@ -4,6 +4,7 @@ import { Button, ListItem, Typography } from "@mui/material";
 import { Stack } from "@mui/system";
 import DeleteIcon from "@mui/icons-material/Delete";
 import TaskIcon from "@mui/icons-material/Task";
+import GradeIcon from "@mui/icons-material/Grade";
 import { removeTodo } from "../store/todos/todos-action";
 
 function TodoItem({ text, id }) {
@@ -19,13 +20,22 @@ function TodoItem({ text, id }) {
         justifyContent: "space-between",
       }}
     >
-      <Typography fontSize="20px">{text}</Typography>
-      <Stack sx={{ display: "flex", flexDirection: "row" }}>
+      <Typography
+        sx={{
+          overflow: "hidden",
+          whiteSpace: "nowrap",
+          textOverflow: "ellipsis",
+        }}
+        fontSize="20px"
+      >
+        {text}
+      </Typography>
+      <Stack sx={{ display: "flex", flexDirection: "row", width: "200px" }}>
         <Button
           sx={{
             border: "none",
             outline: "none",
-            pr: "0",
+            padding: "0",
             ":hover": {
               bgcolor: "black",
             },
@@ -38,12 +48,26 @@ function TodoItem({ text, id }) {
           sx={{
             border: "none",
             outline: "none",
+            padding: "0",
             ":hover": {
               bgcolor: "black",
             },
           }}
         >
           <TaskIcon />
+        </Button>
+        <Button
+          sx={{
+            border: "none",
+            outline: "none",
+            padding: "0",
+            pr: "0",
+            ":hover": {
+              bgcolor: "black",
+            },
+          }}
+        >
+          <GradeIcon />
         </Button>
       </Stack>
     </ListItem>

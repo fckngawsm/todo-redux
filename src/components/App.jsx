@@ -2,7 +2,7 @@ import React from "react";
 import AddTask from "./AddTask";
 import Header from "./Header";
 import ListTodo from "./ListTodo";
-import "../fonts/inter.css";
+import "../utils/fonts/inter.css";
 import Footer from "./Footer";
 
 function App() {
