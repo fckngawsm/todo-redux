@@ -2,6 +2,7 @@ import React from "react";
 import { AppBar, IconButton, Input, Toolbar, Typography } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import { Container, Stack } from "@mui/system";
+import Filter from "./Filter";
 
 function Header() {
   return (
@@ -42,6 +43,7 @@ function Header() {
             </IconButton>
           </Stack>
         </Toolbar>
+        <Filter />
       </Container>
     </AppBar>
   );
